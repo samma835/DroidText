@@ -1,6 +1,7 @@
 package repack.org.bouncycastle.util.io;
 
 import java.io.ByteArrayOutputStream;
+import java.io.EOFException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -46,7 +47,14 @@ public final class Streams
         int totalRead = 0;
         while (totalRead < len)
         {
-            int numRead = inStr.read(buf, off + totalRead, len - totalRead);
+        	int numRead = 0;
+        	try {
+        		numRead = inStr.read(buf, off + totalRead, len - totalRead);	
+			} catch (EOFException e) {
+				e.printStackTrace();
+				break;
+			}
+            
             if (numRead < 0)
             {
                 break;

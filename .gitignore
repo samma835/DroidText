@@ -1,0 +1,6 @@
+bin/AndroidManifest.xml
+bin/R.txt
+bin/classes/.gitignore
+bin/droidtext.jar
+bin/jarlist.cache
+libs/android-support-v4.jar
