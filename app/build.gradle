@@ -39,6 +39,7 @@ project.archivesBaseName = 'droidText'
 
 
 dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
 }
 
 // build a jar with source files
