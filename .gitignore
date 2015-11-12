@@ -1,4 +1,3 @@
-build/
 *.iml
 target/
 *.apk
@@ -11,3 +10,6 @@ manifest-merger-release-report.txt
 .DS_Store
 .idea
 manifest-merger-release-report
+/gen
+/build
+build

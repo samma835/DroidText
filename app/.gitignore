@@ -1,7 +1,6 @@
 build/
 *.iml
 target/
-build/
 *.apk
 manifest-merger-release-report.txt
 .gradle/
@@ -15,3 +14,4 @@ target/
 .idea
 build/
 manifest-merger-release-report
+/gen
